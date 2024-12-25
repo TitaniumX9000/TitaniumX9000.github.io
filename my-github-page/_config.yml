@@ -21,7 +21,7 @@
 title: Xenon's Cornfield
 email: titaniumx9000@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi there! I'm Xenon, a student majoring in machanical engineering in Xi'an Jiaotong University. I'm interested in robotics, programming, and other cool stuff. This is my personal blog, where I share my thoughts and projects. Enjoy!
+  Hi there! I'm Xenon, a student majoring in machanical engineering in Xi'an Jiaotong University.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "@TitaniumXe"
