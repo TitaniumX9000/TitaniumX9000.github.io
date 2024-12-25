@@ -1,2 +1,2 @@
-# TitaniumX9000.github.io
+# titaniumx9000.github.io
 Xenon's Personal Blog
