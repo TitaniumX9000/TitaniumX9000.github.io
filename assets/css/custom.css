@@ -1,4 +1,7 @@
 body {
+}
+
+.wrapper {
     background-image: url("/assets/images/Stella of the End(Switch).jpg");
     background-size: cover;
     background-repeat: no-repeat;
