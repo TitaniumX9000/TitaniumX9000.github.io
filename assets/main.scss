@@ -23,7 +23,6 @@ body::before {
   z-index: -1; /* 确保背景在内容后面 */
 }
 
-/* 毛玻璃效果的代码块，仅应用于最外层 .highlight 或 .codehilite 元素 */
 .highlight, .codehilite {
   background: rgba(255, 255, 255, 0.3) !important; /* 半透明背景 */
   backdrop-filter: blur(10px) !important; /* 毛玻璃效果 */
@@ -31,10 +30,8 @@ body::before {
   border-radius: 10px !important; /* 圆角 */
   padding: 10px !important; /* 内边距 */
   overflow-x: auto !important; /* 横向滚动 */
-  /* 移除整体透明度 */
 }
 
-/* 移除嵌套的 .highlight 和 .codehilite 的背景及滤镜 */
 .highlight .highlight,
 .codehilite .codehilite {
   background: transparent !important; /* 移除背景 */
@@ -42,7 +39,6 @@ body::before {
   -webkit-backdrop-filter: none !important; /* 兼容Safari */
 }
 
-/* 移除 pre 内部的背景，避免重复 */
 .highlight pre,
 .codehilite pre {
   background: transparent !important; /* 移除背景 */
@@ -51,7 +47,6 @@ body::before {
   border: none !important; /* 兼容Safari */
 }
 
-/* 毛玻璃效果的行内代码，排除 pre 内的 code */
 code:not(pre code) {
   display: inline-block; /* 确保支持 backdrop-filter */
   background: rgba(255, 255, 255, 0.3); /* 半透明背景 */
@@ -59,6 +54,6 @@ code:not(pre code) {
   -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
   border-radius: 5px; /* 圆角 */
   padding: 2px 5px; /* 内边距 */
-  border: none;
 }
+
 
