@@ -26,5 +26,9 @@
         </div>
       </nav>
     {%- endif -%}
+
+    {% if page.page_background %}// 如果页面有单独背景
+      <div class="custom-background"></div>
+    {% endif %}
   </div>
 </header>

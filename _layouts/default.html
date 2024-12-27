@@ -1,15 +1,25 @@
+---
+# _layouts/default.html
+
+layout: none
+layout_background: "/assets/images/winter.png"  # 布局的默认背景
+---
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
 
-  <body>
+  <body style="background-image: url('{{ page.background | default: page.layout_background | default: site.default_background | default: "/assets/images/winter.png" }}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        <!-- 添加一个遮罩层 -->
+        <div class="content-overlay">
+          {{ content }}
+        </div>
       </div>
     </main>
 

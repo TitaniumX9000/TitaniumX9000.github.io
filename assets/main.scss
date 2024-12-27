@@ -3,28 +3,71 @@
 ---
 @import "minima";
 
+/* 全局文字颜色（可选） */
 body {
   position: relative;
   z-index: 0;
+  color: #000000; /* 设置全局默认文字颜色 */
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/assets/images/StellaoftheEndSwitch.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.3; /* 调整透明度 */
-  z-index: -1; /* 确保背景在内容后面 */
+/* 页眉样式 */
+.site-header {
+  background-color: rgba(255, 255, 255, 0.4); /* 设置页眉背景为半透明黑色 */
+  color: #000000; /* 设置页眉文字颜色为白色 */
 }
 
+.site-header a {
+  color: #130e36; /* 设置页眉链接颜色为白色 */
+  text-decoration: none; /* 移除链接下划线（可选） */
+}
+
+.site-header a:hover {
+  color: #635ae7; /* 设置链接悬停颜色为亮蓝色 */
+}
+
+/* 页脚样式 */
+.site-footer {
+  background-color: rgba(255, 255, 255, 0.4); /* 设置页脚背景为半透明黑色 */
+  color: #000000; /* 设置页脚文字颜色为白色 */
+}
+
+.site-footer a {
+  color: #1e90ff; /* 设置页脚链接颜色为亮蓝色 */
+  text-decoration: none; /* 移除链接下划线（可选） */
+}
+
+.site-footer a:hover {
+  color: #635ae7; /* 设置链接悬停颜色为橙红色 */
+}
+
+.footer-heading {
+  color: #272727; /* 确保页脚标题为白色 */
+}
+
+.footer-col-1 .p-name,
+.footer-col-1 .u-email,
+.footer-col-3 p {
+  color: #595959; /* 设置联系方式和描述的文字颜色为浅灰色 */
+}
+
+/* 遮罩层样式 */
+.content-overlay {
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明黑色背景 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+  color: #323232; /* 设置内容文字颜色为白色 */
+}
+
+/* 示例：为主页添加不同的遮罩样式 */
+.home-overlay {
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明黑色背景 */
+  color: #323232; /* 文字颜色为白色 */
+}
+
+// 修改代码块为磨砂玻璃效果
 .highlight, .codehilite {
-  background: rgba(255, 255, 255, 0.3) !important; /* 半透明背景 */
+  background: rgba(255, 255, 255, 0.25) !important; /* 半透明背景 */
   backdrop-filter: blur(10px) !important; /* 毛玻璃效果 */
   -webkit-backdrop-filter: blur(10px) !important; /* 兼容Safari */
   border-radius: 10px !important; /* 圆角 */
@@ -41,19 +84,35 @@ body::before {
 
 .highlight pre,
 .codehilite pre {
-  background: transparent !important; /* 移除背景 */
-  backdrop-filter: none !important; /* 移除毛玻璃效果 */
-  -webkit-backdrop-filter: none !important;
-  border: none !important; /* 兼容Safari */
+  background: rgba(255, 255, 255, 0.25) !important; /* 半透明背景 */
+  backdrop-filter: blur(10px) !important; /* 毛玻璃效果 */
+  -webkit-backdrop-filter: blur(10px) !important; /* 兼容Safari */
+  border: none !important; /* 移除边框 */
+}
+
+.highlight pre code,
+.codehilite pre code,
+.highlight pre code span,
+.codehilite pre code span {
+  background: transparent !important;
 }
 
 code:not(pre code) {
   display: inline-block; /* 确保支持 backdrop-filter */
-  background: rgba(255, 255, 255, 0.3); /* 半透明背景 */
+  background: rgba(255, 255, 255, 0.25); /* 半透明背景 */
   backdrop-filter: blur(10px); /* 毛玻璃效果 */
   -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
   border-radius: 5px; /* 圆角 */
   padding: 2px 5px; /* 内边距 */
+  border: none; /* 移除边框 */
 }
+//磨砂玻璃效果修改结束
 
 
+//修改引用部分
+blockquote {
+  font-style: normal;
+  border-left: 4px solid rgba(255, 255, 255, 0.6); 
+  
+}
+//引用部分字体修改结束

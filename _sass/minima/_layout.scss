@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: none;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -20,7 +20,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $grey-color;
   }
 }
 
@@ -34,6 +34,7 @@
 
   .menu-icon {
     display: none;
+    color: rgba($color: #ffffff, $alpha: 0.4);
   }
 
   .page-link {
@@ -74,7 +75,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: none;
       }
     }
 
@@ -199,7 +200,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $grey-color-light;
 }
 
 .post-link {

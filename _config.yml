@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TitaniumXe
 github_username:  TitaniumX9000
-
+default_background: "/assets/images/winter.png"  # 站点默认背景
 # Build settings
 theme: minima
 plugins:
