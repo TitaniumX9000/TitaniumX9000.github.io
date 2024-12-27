@@ -3,6 +3,13 @@
 ---
 @import "minima";
 
+body {
+  background-position: center center; /* 居中显示 */
+  background-size: cover;            /* 缩放以覆盖整个容器 */
+  background-repeat: no-repeat;      /* 不重复背景图片 */
+  background-attachment: scroll;     /* 移动设备上使用 scroll */
+}
+
 /* 全局文字颜色（可选） */
 body {
   position: relative;
