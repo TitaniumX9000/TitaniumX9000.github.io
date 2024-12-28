@@ -180,7 +180,8 @@ blockquote {
     position: absolute;
     top: 9px;
     right: $spacing-unit * 0.5;
-    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+		backdrop-filter: blur(15px);
     border: none;
     border-radius: 5px;
     text-align: right;
