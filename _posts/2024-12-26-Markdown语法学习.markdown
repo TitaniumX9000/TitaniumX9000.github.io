@@ -64,7 +64,7 @@ __表格__ 使用|和-画表格. 横向分隔行的管道符\|左边加冒号则
 
 **添加图片** 使用`![图片内容的文本描述](图像存储地址 "图片标题")`插入图片.
 
-![image](/assets/image/favicon.svg "机器之花")
+![image](/assets/images/favicon.svg "机器之花")
 
 
 ***我的网站还添加了Markdown对部分$\LaTeX$语法的支持***
