@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Xenon'Cornfield!"
+title:  "Welcome to Xenon's Cornfield!"
 date:   2024-12-28 21:19:02 +0800
 categories: thoughts
 background: "/assets/images/Chasing_Angels.png"
