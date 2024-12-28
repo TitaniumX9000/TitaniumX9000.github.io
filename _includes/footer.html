@@ -3,16 +3,14 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <h2 class="footer-heading">{{ site.title | markdownify }}</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
+              {{ site.author | markdownify }}
             {%- endif -%}
             </li>
             {%- if site.email -%}
@@ -26,8 +24,12 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <div class="footer-visitor-stats">
+          {{ '**访客总数** <span id="busuanzi_value_site_uv"></span> 人次' | markdownify }}
+        </div>
+        <p>{{- site.description | markdownify -}}</p>
       </div>
+      
     </div>
 
   </div>

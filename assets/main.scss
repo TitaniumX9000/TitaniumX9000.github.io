@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter
 ---
+@import "variables"; // 导入自定义变量
 @import "minima";
 
 body {
@@ -19,17 +20,17 @@ body {
 
 /* 页眉样式 */
 .site-header {
-  background-color: rgba(255, 255, 255, 0.4); /* 设置页眉背景为半透明黑色 */
-  color: #000000; /* 设置页眉文字颜色为白色 */
+  background-color: rgba(255, 255, 255, 0.4); /* 设置页眉背景为半透明白色 */
+  color: #000000; /* 设置页眉文字颜色为黑色 */
 }
 
 .site-header a {
-  color: #130e36; /* 设置页眉链接颜色为白色 */
+  color: #130e36; /* 设置页眉链接颜色 */
   text-decoration: none; /* 移除链接下划线（可选） */
 }
 
 .site-header a:hover {
-  color: #635ae7; /* 设置链接悬停颜色为亮蓝色 */
+  color: #635ae7; /* 设置链接悬停颜色 */
 }
 
 /* 页脚样式 */
@@ -54,22 +55,22 @@ body {
 .footer-col-1 .p-name,
 .footer-col-1 .u-email,
 .footer-col-3 p {
-  color: #595959; /* 设置联系方式和描述的文字颜色为浅灰色 */
+  color: #363636; /* 设置联系方式和描述的文字颜色为浅灰色 */
 }
 
 /* 遮罩层样式 */
 .content-overlay {
-  background-color: rgba(255, 255, 255, 0.5); /* 半透明黑色背景 */
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
-  color: #323232; /* 设置内容文字颜色为白色 */
+  color: #222222; /* 设置内容文字颜色为黑色 */
 }
 
 /* 示例：为主页添加不同的遮罩样式 */
 .home-overlay {
   background-color: rgba(255, 255, 255, 0.5); /* 半透明黑色背景 */
-  color: #323232; /* 文字颜色为白色 */
+  color: #222222; /* 文字颜色为白色 */
 }
 
 // 修改代码块为磨砂玻璃效果
@@ -119,7 +120,111 @@ code:not(pre code) {
 //修改引用部分
 blockquote {
   font-style: normal;
-  border-left: 4px solid rgba(255, 255, 255, 0.6); 
+  border-left: 4px solid rgba(255, 255, 255, 0.7); 
   
 }
 //引用部分字体修改结束
+
+//修改移动端右上角菜单背景
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    color: rgba($color: #525252, $alpha: 0.4);
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit * 0.5;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: $grey-color;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      margin-left: 20px;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+//移动端右上角菜单背景修改结束
+
+//修改访客数显示
+.footer-visitor-stats {
+  font-size: 14px;
+  color: #555;
+}
+//访客数显示修改结束
+
+//修改footer
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(27.5% - (#{$spacing-unit} / 2));
+  width:         calc(27.5% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(37.5% - (#{$spacing-unit} / 2));
+  width:         calc(37.5% - (#{$spacing-unit} / 2));
+}
+//footer修改结束

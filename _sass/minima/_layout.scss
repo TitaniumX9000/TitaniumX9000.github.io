@@ -20,13 +20,14 @@
 
   &,
   &:visited {
-    color: $grey-color;
+    color: $grey-color-dark;
   }
 }
 
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  
 
   .nav-trigger {
       display: none;
@@ -51,8 +52,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit * 0.5;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border: none;
     border-radius: 5px;
     text-align: right;
 

@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Xenon's Cornfield
+title: __Xenon's__ Cornfield
+author: _AeFx_\_羽流弦の迹
 email: titaniumx9000@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hi there! I'm Xenon, a student majoring in mechanical engineering in Xi'an Jiaotong University.
+description: >-
+  Powered by **[Jekyll](https://jekyllrb.com)**  Designed by **_AeFx_\_羽流弦の迹** with [Minima](https://github.com/jekyll/minima)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TitaniumXe
