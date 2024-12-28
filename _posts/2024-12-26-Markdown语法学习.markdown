@@ -3,7 +3,7 @@ layout: post
 title:  "Markdown Grammar Notes"
 date:   2024-12-26 23:11:02 +0800
 categories: grammar
-background: "/assets/images/StellaoftheEndSwitch.jpg"
+background: "/assets/images/skygirl.jpg"
 ---
 
 ## 基本操作

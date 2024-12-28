@@ -9,5 +9,8 @@ Hi there! I'm Xenon, a student majoring in mechanical engineering in Xi'an Jiaot
 
 <div style="text-align: right;">
 --AeFx_羽流弦の迹
-<img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="20" height="20">
+</div>
+
+<div style="text-align: center;">
+<img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="150" height="150">
 </div>

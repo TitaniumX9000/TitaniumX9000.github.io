@@ -10,7 +10,7 @@ layout_background: "/assets/images/winter.png"  # 布局的默认背景
 
   {%- include head.html -%}
 
-  <body style="background-image: url('{{ page.background | default: page.layout_background | default: site.default_background | default: "/assets/images/winter.png" }}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+  <body style="background-image: url('{{ page.background | default: page.layout_background | default: site.default_background | default: "/assets/images/winter.png" }}'); background-size: cover; background-repeat: no-repeat; background-attachment: scroll;">
 
     {%- include header.html -%}
 
