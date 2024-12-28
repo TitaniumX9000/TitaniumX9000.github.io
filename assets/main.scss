@@ -75,6 +75,7 @@ body {
 
 // 修改代码块为磨砂玻璃效果
 .highlight, .codehilite {
+  display: inline-block !important; /* 修复代码块内部样式 */
   background: rgba(255, 255, 255, 0.25) !important; /* 半透明背景 */
   backdrop-filter: blur(10px) !important; /* 毛玻璃效果 */
   -webkit-backdrop-filter: blur(10px) !important; /* 兼容Safari */
@@ -228,3 +229,55 @@ blockquote {
   width:         calc(37.5% - (#{$spacing-unit} / 2));
 }
 //footer修改结束
+
+
+/* 自定义 Minima 表格样式 */
+table {
+  width:auto;
+  margin-bottom: $spacing-unit;
+  text-align: $table-text-align;
+  color: lighten($text-color, 18%);
+  border-collapse: collapse;
+  border: none;
+
+  /* 设置毛玻璃背景效果 */
+  background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+  backdrop-filter: blur(10px); /* 毛玻璃模糊效果 */
+  -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
+
+  tr {
+    &:nth-child(even) {
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+
+  th, td {
+    padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
+  }
+
+  th {
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border: 1px solid $grey-color;
+    border-bottom-color: darken($grey-color, 12%);
+  }
+
+  td {
+    border: 1px solid $grey-color;
+  }
+
+  /* 统一所有表格行的背景 */
+  tr {
+    background: rgba(255, 255, 255, 0.3); /* 半透明行背景 */
+  }
+
+  /* 悬停时的背景效果 */
+  tr:hover {
+    background: rgba(255, 255, 255, 0.4); /* 悬停时稍微加深背景 */
+  }
+
+  /* 移除默认的隔行背景 */
+  /* 如果之前有添加隔行背景的样式，请确保在此处取消注释或删除 */
+  // tr:nth-child(even), tr:nth-child(odd) {
+  //   background: rgba(255, 255, 255, 0.1);
+  // }
+}
