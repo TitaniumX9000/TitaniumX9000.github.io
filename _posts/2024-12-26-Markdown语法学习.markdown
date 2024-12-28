@@ -7,6 +7,7 @@ background: "/assets/images/StellaoftheEndSwitch.jpg"
 ---
 
 ## 基本操作
+
 __n级标题__ 输入n个#并在尾部添加空格.
 
 **粗体** 在文本两侧各添加两条下划线_或者两个星号*, __星河欲转千帆舞__.
@@ -80,3 +81,4 @@ $$
 \int \frac{\mathrm{d}x}{\sqrt{a^2+x^2}} = \mathrm{log} \left| x+\sqrt{x^2+a^2} \right| + C
 $$
 
+<img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="20" height="20">

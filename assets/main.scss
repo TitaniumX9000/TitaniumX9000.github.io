@@ -69,9 +69,28 @@ body {
 
 /* 示例：为主页添加不同的遮罩样式 */
 .home-overlay {
-  background-color: rgba(255, 255, 255, 0.5); /* 半透明黑色背景 */
-  color: #222222; /* 文字颜色为白色 */
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+  color: #222222; /* 文字颜色为黑色 */
 }
+
+/* 添加标题旁的图片 */
+.site-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  line-height: $base-line-height * $base-font-size * 2.5;
+}
+
+.site-title-icon {
+  display: inline-block;
+  margin-left: 8px; /* 调整图标与标题之间的间距 */
+  height: 1.25em;
+  width: 1.25em;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15%;
+}
+/*标题旁的图片添加完毕*/
 
 // 修改代码块为磨砂玻璃效果
 .highlight, .codehilite {
@@ -214,6 +233,12 @@ blockquote {
 //访客数显示修改结束
 
 //修改footer
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit * 0.1;
+  padding-left: $spacing-unit * 0.5;
+}
+
 .footer-col-1 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width:         calc(35% - (#{$spacing-unit} / 2));

@@ -1,30 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-12-25 22:13:02 +0800
-categories: jekyll update
+title:  "Welcome to Xenon'Cornfield!"
+date:   2024-12-28 21:19:02 +0800
+categories: thoughts
 background: "/assets/images/winter.png"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+马上要期末考试的时候简单建了这个博客, 算是年终给自己的一个小礼物吧, *说是生日礼物也未尝不可*. 会写一些感想和总结, 你可以当成一个记事本看.<img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="20" height="20">

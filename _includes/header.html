@@ -3,7 +3,13 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | markdownify }}</a>
+    
+    <!-- 修改 site-title 链接，添加 Favicon 图标 -->
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      {{ site.title | markdownify }}
+      <img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="36" height="36" class="site-title-icon">
+      <img src="{{ "/assets/images/冬.png" | relative_url }}" alt="Favicon" width="36" height="36" class="site-title-icon">
+    </a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -27,7 +33,7 @@
       </nav>
     {%- endif -%}
 
-    {% if page.page_background %}// 如果页面有单独背景
+    {% if page.page_background %}
       <div class="custom-background"></div>
     {% endif %}
   </div>
