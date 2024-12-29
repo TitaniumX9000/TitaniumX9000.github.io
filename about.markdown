@@ -8,7 +8,7 @@ permalink: /about/
 Hi there! I'm Xenon, a student majoring in mechanical engineering in Xi'an Jiaotong University. Welcome to my cornfield. : )
 
 <div style="text-align: right;">
---AeFx_羽流弦の迹
+--AeFx_羽流弦の迹 2024 <img src="{{ "/assets/images/winterbadge250x250.png" | relative_url }}" alt="winter" width="30" height="30">
 </div>
 
 <div style="text-align: center;">

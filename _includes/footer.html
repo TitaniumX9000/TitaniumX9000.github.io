@@ -12,10 +12,12 @@
             {%- if site.author -%}
               {{ site.author | markdownify }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          </li>
+          <li class="p-update">
+            {%- if site.last_update -%}
+              {{ site.last_update | markdownify }}
             {%- endif -%}
+          </li>
         </ul>
       </div>
 
@@ -25,7 +27,7 @@
 
       <div class="footer-col footer-col-3">
         <div class="footer-visitor-stats">
-          {{ '**访客总数** <span id="busuanzi_value_site_uv"></span> 人次' | markdownify }}
+          {{ '访客总数 <span id="busuanzi_value_site_uv"></span> 人次' | markdownify }}
         </div>
         <p>{{- site.description | markdownify -}}</p>
         
