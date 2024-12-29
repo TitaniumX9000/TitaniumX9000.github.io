@@ -1,4 +1,5 @@
-# titaniumx9000.github.io
-##Xenon's Personal Blog
+# Xenon's Personal Blog
+
+titaniumx9000.github.io
 
 Hope you enjoy it.
