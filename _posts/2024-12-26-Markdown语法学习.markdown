@@ -81,7 +81,7 @@ $$
 $$
 
 $$
-\int \frac{\mathrm{d}x}{\sqrt{a^2+x^2}} = \mathrm{log} \left| x+\sqrt{x^2+a^2} \right| + C
+\int \frac{\mathrm{d}x}{\sqrt{a^2+x^2}} = \ln \left| x+\sqrt{x^2+a^2} \right| + C
 $$
 
 <br><br>
