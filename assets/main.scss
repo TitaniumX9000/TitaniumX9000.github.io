@@ -361,3 +361,11 @@ table {
     margin-bottom: 0;
   }
 }
+
+/* 自定义 Markdown 分隔线的颜色 */
+hr {
+  border: none; /* 移除默认边框 */
+  height: 1px; /* 设置分隔线高度 */
+  background-color: rgba($color: #949494, $alpha: 0.6); /* 使用预定义的浅灰色变量 */
+  margin: none; /* 可选：调整分隔线的上下间距 */
+}

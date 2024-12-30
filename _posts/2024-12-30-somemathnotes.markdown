@@ -3,7 +3,7 @@ layout: post
 title:  "一些高数结论"
 date:   2024-12-31 01:15:08 +0800
 categories: review
-background: "/assets/images/SnowyMountains.jpg"
+background: "/assets/images/SnowyMountain.jpg"
 ---
 
 在这里写一点鸡肋的微积分学结论--._食之无味, 弃之可惜_. 权当期末复习开胃菜和LaTex语法练习吧.
@@ -48,7 +48,7 @@ $\sinh x = \frac{\mathrm{e}^x-\mathrm{e}^{-x}}{2}$, $\cosh=\frac{\mathrm{e}^x+\m
 __反双曲函数__
 
 - $\sinh^{-1} x=\ln{(x+\sqrt{x^2+1})}$
-- $\cosh^{-1} x=\ln{(x+\sqrt{x^2-1})} (x\in[1,\infty))$
+- $\cosh^{-1} x=\ln{(x+\sqrt{x^2-1})} \left(x\in[1,\infty)\right)$
 
 ## 积分
 __基本初等函数__
@@ -57,8 +57,8 @@ __基本初等函数__
 - $\int \csc^2 x\mathrm{d}x=-\cot x +C$
 - $\int \sec\tan x \mathrm{d} x = \sec x+C$
 - $\int \csc \cot x\mathrm{d}x = -\csc x+C$
-- $\int \sec x\mathrm{d}x = \ln\left|\sec x+\tan x\right|+C=\frac{1}{2}\ln \frac{1+\sin x}{1-\sin x}+C$ _(这里个人更喜欢后者, 无需取绝对值且更容易得到)_
-- $\int \csc x\mathrm{d}x=\frac{1}{2}\ln \frac{1-\cos x}{1+\cos x}+C=\ln \left|\csc x - \cot x\right|+C=\ln \left|\tan\frac{x}{2}\right|+C$
+- $\int \sec x\mathrm{d}x = \ln\left\vert\sec x+\tan x\right\vert+C=\frac{1}{2}\ln \frac{1+\sin x}{1-\sin x}+C$ _(这里个人更喜欢后者, 无需取绝对值且更容易得到)_
+- $\int \csc x\mathrm{d}x=\frac{1}{2}\ln \frac{1-\cos x}{1+\cos x}+C=\ln \left\vert \csc x - \cot x \right\vert +C=\ln \left\vert\tan\frac{x}{2}\right\vert+C$
 
 __有关$\mathrm{e}^x$__
 
@@ -70,9 +70,9 @@ __有关 $x^2 \pm a^2$__
 
 - $\int \frac{\mathrm{d}x}{a^2+x^2}=\frac{1}{a}\arctan \frac{x}{a}+C$
 - $\int\frac{\mathrm{d}x}{\sqrt{a^2-x^2}}=\arcsin \frac{x}{a}+C$
-- $\int \frac{\mathrm{d}x}{\sqrt{x^2 \pm a^2}} = \mathrm{ln}\left|x+\sqrt{x^2 \pm a^2}\right|+C$
+- $\int \frac{\mathrm{d}x}{\sqrt{x^2 \pm a^2}} = \mathrm{ln}\left\vert x+\sqrt{x^2 \pm a^2}\right\vert +C$
 - $\int \frac{x^2}{a^2+x^2}\mathrm{d}x=x-a\arctan\frac{x}{a}+C$
-- $\int \frac{\mathrm{d}x}{(1+x^2)^2}=\frac{1}{2}(\arctan x+\frac{x}{x^2+1})+ C$ (换元 $x$ 为 $\tan t$, 然后凑微分, 利用二倍角公式, 最后利用直角三角形化简三角和反三角函数的复合函数)
+- $\int \frac{\mathrm{d}x}{(1+x^2)^2}=\frac{1}{2}\left(\arctan x+\frac{x}{x^2+1}\right)+ C$ (换元 $x$ 为 $\tan t$, 然后凑微分, 利用二倍角公式, 最后利用直角三角形化简三角和反三角函数的复合函数)
 - $\int\frac{x^2}{(1+x^2)^2} \mathrm{d}x=\int\frac{(x^2-1)+1}{(x^2+1)^2}\mathrm{d}x=\frac{1}{2}(\arctan x-\frac{x}{x^2+1})+ C$
 
 ## 微分
@@ -84,7 +84,7 @@ __Maclaurin's Series和等价无穷小__
 - $\frac{1}{1-x}=\sum\limits_{i=0}^{\infty}x^i=1+x^2+x^3+o(x^3)$
 - $\frac{1}{1+x}=\sum\limits_{i=0}^{\infty}(-1)^ix^i=1-x^2+x^3-o(x^3)$
 - $\ln(1+x)=\sum\limits_{i=1}^\infty\frac{(-1)^{(i-1)}}{i}x^{i}=x-\frac{x^2}{2}+\frac{x^3}{3}-o(x^3)$
-- $\sinh^{-1} x=\ln{(x+\sqrt{x^2+1})}\sim \sinh x \sim x$
+- $\sinh^{-1} x=\ln{\left(x+\sqrt{x^2+1}\right)}\sim \sinh x \sim x$
 - $\log_a (1+x)\sim\frac{x}{\ln a}$
 - $a^x-1\sim x\ln a$
 - $\tan x-\sin x\sim \frac{1}{2}x^3$
