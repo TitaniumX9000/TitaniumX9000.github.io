@@ -88,7 +88,7 @@ body {
 
 /* 示例：为主页添加不同的遮罩样式 */
 .home-overlay {
-  background-color: rgba(210, 210, 210, 0.35); /* 半透明白色背景 */
+  background-color: rgba(210, 210, 210, 0.45); /* 半透明白色背景 */
   backdrop-filter:blur(1px); /* 毛玻璃效果 */
   color: #1b1b1b; /* 文字颜色为黑色 */
 }
