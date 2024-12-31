@@ -2,7 +2,7 @@
 layout: post
 title:  "一些高数结论"
 date:   2024-12-31 11:05:08 +0800
-categories: review
+categories: math
 background: "/assets/images/SnowyMountain.jpg"
 ---
 
