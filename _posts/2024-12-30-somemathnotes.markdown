@@ -77,8 +77,10 @@ __有关 $x^2 \pm a^2$__
 
 __二项微分(形如 $x^m(a+bx^n)^p\mathrm{d}x$)__
 
-> *Chebyshev theorem*: 对形如
-> $$\int x^m(a+bx^n)^{p}\mathrm{d}x$$
+> *Chebyshev theorem*: 对形如  
+> 
+> $$\int x^m(a+bx^n)^{p}\mathrm{d}x$$  
+> 
 > 的积分, 仅当 $p$ 或 $\frac{m+1}{n}$ 或 $p+\frac{m+1}{n}$ 为整数时可积.
 
 具体而言, 
