@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "一些高数结论"
-date:   2024-12-31 01:15:08 +0800
+date:   2024-12-31 11:05:08 +0800
 categories: review
 background: "/assets/images/SnowyMountain.jpg"
 ---
@@ -41,7 +41,7 @@ $\sinh x = \frac{\mathrm{e}^x-\mathrm{e}^{-x}}{2}$, $\cosh=\frac{\mathrm{e}^x+\m
 - $\cosh^2 x -\sinh^2 x= 1$  
 
 本来觉得这玩意和三角函数容易搞混淆, 结果发现有个神奇的规则可以直接让三角恒等式变成双曲恒等式:  
-> _Osbon's Rule_: 先将三角恒等式中的 $\sin$ 和 $\cos$ 分别换成 $\sinh$ 和 $\cosh$, 如果转换结果某项中有$n$个 $\sinh^2$ 因子, 将该项乘 $(-1)^n$, 进而得到双曲恒等式.
+> _Osborn's rule_: 先将三角恒等式中的 $\sin$ 和 $\cos$ 分别换成 $\sinh$ 和 $\cosh$, 如果转换结果某项中有$n$个 $\sinh^2$ 因子, 再将该项乘 $(-1)^n$, 最终结果即为双曲恒等式.
 
 不过在涉及倍角的情况下应用该规则易导致错误, 因为设及倍角的三角恒等式往往含有含 $\sin^2$ 因子的项.
 
@@ -73,8 +73,20 @@ __有关 $x^2 \pm a^2$__
 - $\int \frac{\mathrm{d}x}{\sqrt{x^2 \pm a^2}} = \mathrm{ln}\left\vert x+\sqrt{x^2 \pm a^2}\right\vert +C$
 - $\int \frac{x^2}{a^2+x^2}\mathrm{d}x=x-a\arctan\frac{x}{a}+C$
 - $\int \frac{\mathrm{d}x}{(1+x^2)^2}=\frac{1}{2}\left(\arctan x+\frac{x}{x^2+1}\right)+ C$ (换元 $x$ 为 $\tan t$, 然后凑微分, 利用二倍角公式, 最后利用直角三角形化简三角和反三角函数的复合函数)
-- $\int\frac{x^2}{(1+x^2)^2} \mathrm{d}x=\int\frac{(x^2-1)+1}{(x^2+1)^2}\mathrm{d}x=\frac{1}{2}(\arctan x-\frac{x}{x^2+1})+ C$
+- $\int\frac{x^2}{(1+x^2)^2} \mathrm{d}x=\int\frac{(x^2-1)+1}{(x^2+1)^2}\mathrm{d}x=\frac{1}{2}\left(\arctan x-\frac{x}{x^2+1}\right)+ C$
 
+__二项微分(形如 $x^m(a+bx^n)^p\mathrm{d}x$)__
+
+> *Chebyshev theorem*: 对形如
+> $$\int x^m(a+bx^n)^{p}\mathrm{d}x$$
+> 的积分, 仅当 $p$ 或 $\frac{m+1}{n}$ 或 $p+\frac{m+1}{n}$ 为整数时可积.
+
+具体而言, 
+- 当 $p \in \mathbb{Z}$ 时, 换元 $x$ 为 $t^\lambda$, 其中 $\lambda$ 为分数 $m$ 和分数 $n$ 的分母的最小公倍数, 从而原式 $=\lambda\int t^{\lambda (m+1)-1}\left(a+bt^{\lambda n}\right)^{p}\mathrm{d}t$, 该函数为有理函数, 可积.  
+  例如 $\int \frac{x^\frac{2}{3}}{\left(2+3x^\frac{1}{2}\right)^2}\mathrm{d}x=\int x^\frac{2}{3}\left(2+3x^{\frac{1}{2}}\right)^{-2}\mathrm{d}x=6\int t^9\left(2+3t^3\right)^{-2}\mathrm{d}t$... ~~_(绷不住了, 随便乱编的一个例子, 发现这玩意的结果及其丑陋)_~~
+- 当 $\frac{m+1}{n}\in\mathbb{Z}$ 时, 将 $a+bx^n$ 换为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=\frac{\lambda}{nb}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-a}{b}\right)^{\frac{m+1}{n}-1}\mathrm{d}t$, 该函数为有理函数, 可积.  
+  例如 $\int x\left(1+x^\frac{2}{3}\right)^{-\frac{1}{2}}\mathrm{d}t=3\int \left(t^2-1\right)^{2}\mathrm{d}t=\frac{3}{5}x^5-2t^3+3t+C$  
+- 当 $(\frac{m+1}{n}+p)\in \mathbb{Z}$ 时, 将 $\left(ax^{-n}+b\right)$ 换元为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=-\frac{\lambda}{na}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-b}{a}\right)^{-\left(\frac{m+1}{n}+p\right)-1}\mathrm{d}t$, 该函数为有理函数, 可积.
 ## 微分
 
 __Maclaurin's Series和等价无穷小__
@@ -90,6 +102,10 @@ __Maclaurin's Series和等价无穷小__
 - $\tan x-\sin x\sim \frac{1}{2}x^3$
 - $\tan x - x\sim x-\arctan x\sim\frac{1}{3}x^3$
 - $x-\sin x \sim \arcsin x-x\sim \frac{1}{6}x^3$
+
+__对数求导法__
+
+- $f^\prime(x)=f(x)(\ln f(x))^\prime$ 或 $\frac{\mathrm{d}f(x)}{\mathrm{d}x}=f(x)\frac{\mathrm{d}}{\mathrm{d}x}(\ln f(x))$
 
 
 
