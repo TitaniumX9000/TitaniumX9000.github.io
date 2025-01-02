@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "时间小札2024"
+title:  "时间小札-2024"
 date:   2024-12-31 22:40:00 +0800
 categories: thoughts
 background: "/assets/images/sky.jpg"

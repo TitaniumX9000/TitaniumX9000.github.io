@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "一些高数结论"
-date:   2024-12-31 11:05:08 +0800
+date:   2024-12-30 11:05:08 +0800
 categories: math
 background: "/assets/images/SnowyMountain.jpg"
 ---
@@ -50,6 +50,7 @@ __反双曲函数__
 - $\sinh^{-1} x=\ln{(x+\sqrt{x^2+1})}$
 - $\cosh^{-1} x=\ln{(x+\sqrt{x^2-1})} \left(x\in[1,\infty)\right)$
 
+---
 ## 积分
 __基本初等函数__
 - $\int a^x \mathrm{d}x=\frac{a^x}{\ln a}+C$
@@ -90,7 +91,7 @@ __二项微分(形如 $x^m(a+bx^n)^p\mathrm{d}x$)__
   例如 $\int x\left(1+x^\frac{2}{3}\right)^{-\frac{1}{2}}\mathrm{d}t=3\int \left(t^2-1\right)^{2}\mathrm{d}t=\frac{3}{5}x^5-2t^3+3t+C$  
 - 当 $(\frac{m+1}{n}+p)\in \mathbb{Z}$ 时, 将 $\left(ax^{-n}+b\right)$ 换元为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=-\frac{\lambda}{na}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-b}{a}\right)^{-\left(\frac{m+1}{n}+p\right)-1}\mathrm{d}t$, 该函数为有理函数, 可积.  
 
-
+---
 ## 微分
 
 __Maclaurin's Series和等价无穷小__
