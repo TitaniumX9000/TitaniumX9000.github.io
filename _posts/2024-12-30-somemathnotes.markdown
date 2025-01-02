@@ -88,7 +88,9 @@ __二项微分(形如 $x^m(a+bx^n)^p\mathrm{d}x$)__
   例如 $\int \frac{x^\frac{2}{3}}{\left(2+3x^\frac{1}{2}\right)^2}\mathrm{d}x=\int x^\frac{2}{3}\left(2+3x^{\frac{1}{2}}\right)^{-2}\mathrm{d}x=6\int t^9\left(2+3t^3\right)^{-2}\mathrm{d}t$... ~~_(绷不住了, 随便乱编的一个例子, 发现这玩意的结果及其丑陋)_~~
 - 当 $\frac{m+1}{n}\in\mathbb{Z}$ 时, 将 $a+bx^n$ 换为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=\frac{\lambda}{nb}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-a}{b}\right)^{\frac{m+1}{n}-1}\mathrm{d}t$, 该函数为有理函数, 可积.  
   例如 $\int x\left(1+x^\frac{2}{3}\right)^{-\frac{1}{2}}\mathrm{d}t=3\int \left(t^2-1\right)^{2}\mathrm{d}t=\frac{3}{5}x^5-2t^3+3t+C$  
-- 当 $(\frac{m+1}{n}+p)\in \mathbb{Z}$ 时, 将 $\left(ax^{-n}+b\right)$ 换元为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=-\frac{\lambda}{na}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-b}{a}\right)^{-\left(\frac{m+1}{n}+p\right)-1}\mathrm{d}t$, 该函数为有理函数, 可积.
+- 当 $(\frac{m+1}{n}+p)\in \mathbb{Z}$ 时, 将 $\left(ax^{-n}+b\right)$ 换元为 $t^\lambda$ (其中 $\lambda$ 为分数 $p$ 的分母), 从而原式 $=-\frac{\lambda}{na}\int t^{\lambda p+\lambda-1}\left(\frac{t^\lambda-b}{a}\right)^{-\left(\frac{m+1}{n}+p\right)-1}\mathrm{d}t$, 该函数为有理函数, 可积.  
+
+
 ## 微分
 
 __Maclaurin's Series和等价无穷小__
@@ -108,7 +110,6 @@ __Maclaurin's Series和等价无穷小__
 __对数求导法__
 
 - $f^\prime(x)=f(x)(\ln f(x))^\prime$ 或 $\frac{\mathrm{d}f(x)}{\mathrm{d}x}=f(x)\frac{\mathrm{d}}{\mathrm{d}x}(\ln f(x))$
-
 
 
 

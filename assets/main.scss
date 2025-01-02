@@ -28,7 +28,7 @@ body {
 
 /* 页眉样式 */
 .site-header {
-  background-color: rgba(210, 210, 210, 0.2);
+  background-color: rgba(210, 210, 210, 0.25);
   backdrop-filter:blur(0.5px); /* 毛玻璃效果 */
   color: rgba($color: #212121, $alpha: 1);
   border-bottom: rgba($color: #c5c5c5, $alpha: 0.9);
@@ -45,10 +45,12 @@ body {
 
 /* 页脚样式 */
 .site-footer {
-  background-color: rgba(210, 210, 210, 0.2);
-  backdrop-filter:blur(0.5px); /* 毛玻璃效果 */
+  background-color: rgba(210, 210, 210, 0.25);
+  backdrop-filter:blur(1px); /* 毛玻璃效果 */
   color: rgba($color: #212121, $alpha: 1);
   border-top: rgba($color: #c5c5c5, $alpha: 0.9);
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .p-update {
@@ -247,14 +249,10 @@ code:not(pre code) {
 //移动端右上角菜单背景修改结束
 
 //修改footer
-.site-footer{
-  border-top: 1px blur(5px) $grey-color-light;
-}
-
 .footer-col {
   float: left;
   margin-top: 0;
-  margin-bottom: $spacing-unit * 0.3;
+  margin-bottom: $spacing-unit * 0.1;
   padding-left: $spacing-unit * 0.5;
 }
 
@@ -356,6 +354,7 @@ table {
   @include relative-font-size(1.125);
   letter-spacing: 0px;
   font-style: normal;
+  margin-bottom: 4px;
 
   > :last-child {
     margin-bottom: 0;
@@ -366,6 +365,16 @@ table {
 hr {
   border: none; /* 移除默认边框 */
   height: 1px; /* 设置分隔线高度 */
-  background-color: rgba($color: #949494, $alpha: 0.6); /* 使用预定义的浅灰色变量 */
-  margin: none; /* 可选：调整分隔线的上下间距 */
+  background-color: rgba($color: #cfcfcf, $alpha: 0.75); /* 使用预定义的浅灰色变量 */
+  margin-top: 10px;
+  margin-bottom: none; /* 可选：调整分隔线的上下间距 */
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.page-content {
+  padding-top: 35px;
+  padding-bottom: 150px;
 }
