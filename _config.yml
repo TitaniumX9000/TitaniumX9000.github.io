@@ -36,6 +36,8 @@ plugins:
 sass:
   sass_dir: assets
 
+google_analytics: G-38RQYNDL6E
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
