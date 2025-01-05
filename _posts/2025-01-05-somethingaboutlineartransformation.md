@@ -79,7 +79,7 @@ b_{1m}&b_{2m}&\boldsymbol{...}&b_{nm}
 $$
 
 这样我们就得到了基的变换.  
-这里我们使用目标基 $\boldsymbol{B}$ 表达原始基 $\boldsymbol{A}$, 然而在狭义的基变换情形下, $V=W$, 原始基 $\boldsymbol{A}$ 就是是自然基 $\boldsymbol{I}$, 而目标基的基向量却往往是用原始基表达的(这意味着变换矩阵 $\boldsymbol{M}$ 可逆), 所以过渡矩阵被定义为满足 $\boldsymbol{B}=\boldsymbol{AM^\prime}$ 的 $\boldsymbol{M^\prime}$, 也就是说 $\boldsymbol{M^\prime}=\boldsymbol{M^{-1}}$.
+这里我们使用目标基 $\boldsymbol{B}$ 表达原始基 $\boldsymbol{A}$, 然而在狭义的基变换情形下, $V=W$, 原始基 $\boldsymbol{A}$ 往往是自然基 $\boldsymbol{I}$, 而这时目标基的基向量就是用原始基表达的(这意味着变换矩阵 $\boldsymbol{M}$ 可逆), 所以过渡矩阵被定义为满足 $\boldsymbol{B}=\boldsymbol{AM^\prime}$ 的 $\boldsymbol{M^\prime}$, 也就是说 $\boldsymbol{M^\prime}=\boldsymbol{M^{-1}}$.
 
 在等式两侧同时右乘坐标 $\vec{a}$, 即可得到 $\boldsymbol{x}$ 在基 $\boldsymbol{A}$ 下的定义 $\boldsymbol{x}=\boldsymbol{A}\vec{a}=\boldsymbol{BM}\vec{a}$. 又因为我们已经在基 $\boldsymbol{B}$ 下定义 $\boldsymbol{x}=\boldsymbol{B}\vec{b}$, 故有定义
 $$
@@ -92,6 +92,7 @@ $$\begin{align}
 \end{align}
 $$
 
+*(上式应该从右往左读, 将其理解为对一个向量坐标不断左乘矩阵进行变换, 这与后文会讨论的基变换与线性映射有关.)*
 - 如果采用第一个等号的理解方式,  $\boldsymbol{A}\vec{a}$ 和 $\boldsymbol{B}\vec{b}$ 和 $\boldsymbol{BM}\vec{a}$ 形式上不统一, 考虑和前面相同的思路, 我们可以将其改写成
     $$
     \boldsymbol{x}=\boldsymbol{AI}\vec{a}=\boldsymbol{BM}\vec{a}=\boldsymbol{BI}\vec{b}
