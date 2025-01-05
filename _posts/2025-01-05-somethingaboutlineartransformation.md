@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "左乘还是右乘? 向量的基变换和坐标变换"
+title:  "对向量基变换的一致理解"
 date:   2025-01-05 12:46 +0800
 categories: math
 background: "/assets/images/europa-clipper-phone-backgrounds-03.png"
