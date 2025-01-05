@@ -43,6 +43,7 @@ $$\boldsymbol{x} = \boldsymbol{A}\vec{a}$$
 自然的想法是, 先将原始基 $\boldsymbol{A}$ 中的所有基向量 $\boldsymbol{a_i}(i=1, 2, ..., m)$ 全部用目标基 $\boldsymbol{B}$ 表示出来, 从而(用基 $\boldsymbol{A}$ 下的坐标 $\vec{a}$ 表示的) $\boldsymbol{x}$ 自然也就用基 $\boldsymbol{B}$ 下的坐标 $\vec{b}$ 表示出来了.  
 
 设
+
 $$
 \begin{align}
 \boldsymbol{a_i} &= \sum\limits_{j=1}^{n}b_{ij}\boldsymbol{\beta_j}\\
@@ -50,7 +51,9 @@ $$
 &= \boldsymbol{B}\begin{bmatrix}b_{i1}\\b_{i2}\\...\\b_{in}\end{bmatrix}=\boldsymbol{B}\vec{b_i}
 \end{align}
 $$
+
 ($\vec{b_i}$ 为 $\boldsymbol{\alpha_i}$ 在 $\boldsymbol{B}$ 下的坐标), 则
+
 $$\begin{align}
 \boldsymbol{A} &=
 \begin{bmatrix}
@@ -74,6 +77,7 @@ b_{1m}&b_{2m}&\boldsymbol{...}&b_{nm}
 \end{bmatrix}=\boldsymbol{BM}
 \end{align}
 $$
+
 这样我们就得到了基的变换.  
 这里我们使用目标基 $\boldsymbol{B}$ 表达原始基 $\boldsymbol{A}$, 然而在狭义的基变换情形下, $V=W$, 原始基 $\boldsymbol{A}$ 就是是自然基 $\boldsymbol{I}$, 而目标基的基向量却往往是用原始基表达的(这意味着变换矩阵 $\boldsymbol{M}$ 可逆), 所以过渡矩阵被定义为满足 $\boldsymbol{B}=\boldsymbol{AM^\prime}$ 的 $\boldsymbol{M^\prime}$, 也就是说 $\boldsymbol{M^\prime}=\boldsymbol{M^{-1}}$.
 
@@ -110,7 +114,7 @@ $$
 
 Prompt: *我听说基变换也可以看作一种线性变换。但是对于一般的线性变换，因为基由原来的线性空间的基变成了新的向量空间的基，向量在该线性变换下的像的“方向”和“长度”往往会与原像不同。而基变换虽然新的基和原来的基不同，然而向量的“方向”和“长度”却并未改变，请问这应该如何解释呢？*  
 GPT-4o: 
- ![GPT-4o's Answer](/assets/images/GPT-4o'sAnswer.png "ChatGPT的回答")
+<img src="/assets/images/GPT-4o'sAnswer.png" alt="ChatGPT的回答" title="ChatGPT的回答" style="opacity:0.5;">
 
 <br><br>
 <div style="text-align: right;"><img src="{{ "/assets/images/winterbadge250x250.png" | relative_url }}" alt="winter" width="30" height="30"> <img src="{{ "/assets/images/favicon.svg" | relative_url }}" alt="Favicon" width="30" height="30"></div>
