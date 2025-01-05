@@ -86,10 +86,12 @@ $$
 \boldsymbol{x}=\boldsymbol{A}\vec{a}=\boldsymbol{BM}\vec{a}=\boldsymbol{B}\vec{b}
 $$
 观察等式, 其中 $\boldsymbol{x}=\boldsymbol{BM}\vec{a}$ 可以理解为
+
 $$\begin{align}
 \boldsymbol{向量}&=\boldsymbol{目标基\times(从原始基到目标基的变换\times向量在原始基上的坐标)}\\&=\boldsymbol{目标基\times 向量在目标基上的坐标}
 \end{align}
 $$
+
 - 如果采用第一个等号的理解方式,  $\boldsymbol{A}\vec{a}$ 和 $\boldsymbol{B}\vec{b}$ 和 $\boldsymbol{BM}\vec{a}$ 形式上不统一, 考虑和前面相同的思路, 我们可以将其改写成
     $$
     \boldsymbol{x}=\boldsymbol{AI}\vec{a}=\boldsymbol{BM}\vec{a}=\boldsymbol{BI}\vec{b}
